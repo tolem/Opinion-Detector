@@ -17,3 +17,12 @@ with open('%s' % file_name, 'r', encoding="UTF-8") as file:
     else:
         df = pd.DataFrame(data=opinion)
         print(df.head(), df.tail(), sep='\n')
+
+# dframe = pd.read_csv(input(), sep=None, header=None)
+# dframe.columns = ['Review', 'Score']
+#
+# dframe['Review'] = dframe['Review'].apply(lambda x: f"\" {x.strip()} \"")
+# dframe['Score'] = dframe['Score'].apply(lambda x: x[x.index(",") + 1:].strip())
+#
+# print(dframe[:5])
+# print(dframe[-5:])
